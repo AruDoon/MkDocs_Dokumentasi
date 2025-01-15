@@ -1,23 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-         <loc>https://arudoon.github.io/MkDocs_Dokumentasi/</loc>
-         <lastmod>2025-01-15</lastmod>
-    </url>
-    <url>
-         <loc>https://arudoon.github.io/MkDocs_Dokumentasi/2-setup/</loc>
-         <lastmod>2025-01-15</lastmod>
-    </url>
-    <url>
-         <loc>https://arudoon.github.io/MkDocs_Dokumentasi/3-instalasiSoftware/</loc>
-         <lastmod>2025-01-15</lastmod>
-    </url>
-    <url>
-         <loc>https://arudoon.github.io/MkDocs_Dokumentasi/4-instalasiVision/</loc>
-         <lastmod>2025-01-15</lastmod>
-    </url>
-    <url>
-         <loc>https://arudoon.github.io/MkDocs_Dokumentasi/baru/</loc>
-         <lastmod>2025-01-15</lastmod>
-    </url>
 </urlset>

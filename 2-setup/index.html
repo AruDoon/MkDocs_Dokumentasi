@@ -440,39 +440,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#ros-gazebo" class="md-nav__link">
-    <span class="md-ellipsis">
-      ROS Gazebo
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="ROS Gazebo">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dependencies-yang-diperlukan" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dependencies yang diperlukan
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solidworks-to-gazebo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Solidworks to Gazebo
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -692,39 +659,6 @@
   <a href="#ubah-nama-host-jetson" class="md-nav__link">
     <span class="md-ellipsis">
       Ubah Nama Host Jetson
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ros-gazebo" class="md-nav__link">
-    <span class="md-ellipsis">
-      ROS Gazebo
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="ROS Gazebo">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dependencies-yang-diperlukan" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dependencies yang diperlukan
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solidworks-to-gazebo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Solidworks to Gazebo
     </span>
   </a>
   
@@ -962,60 +896,6 @@ Jika Anda sering berpindah jaringan dan tidak ingin repot mengatur IP statis, an
 </li>
 </ul>
 <p><br></p>
-<h2 id="ros-gazebo"><strong>ROS Gazebo</strong></h2>
-<p><a href="https://gazebosim.org/home">ROS Gazebo</a> adalah tool open-source 2D/3D simulator robot yang memungkinkan kita untuk mengembangkan, memeriksa dan memvalidasi sistem robotik di lingkungan virtual sebelum mewujudkannya di dunia nyata. Disini kami akan menunjukkan langkah-langkah instalasi Ros Gazebo untuk simulasi robot. Operating System yang kami gunakan adalah <a href="https://releases.ubuntu.com/18.04/">Ubuntu 18</a>.</p>
-<p><strong>Install Visual Studio Code</strong> <br>
-Langkah pertama adalah melakukan penginstalan Visual Studio Code jika kamu belum melakukannya, ini menjadi alat yang akan membantumu dalam proses pemrograman nanti. Kamu dapat melihat panduan penginstalan Visual Studio Code pada OS Ubuntu 18 dengan menekan tombol dibawah ini <br></p>
-<p><a class="md-button" href="https://www.ubuntu18.com/install-visual-studio-code-ubuntu-18/">Penginstalan VSC di Ubuntu 18</a> </p>
-<p><br> <strong>Install ROS melodic</strong> <br>
-Setelah itu kita akan masuk ke tahap selanjutnya yaitu penginstalan ROS Melodic. ROS Melodic adalah versi ROS yang dirilis pada tahun 2018 yang terutama dimaksudkan untuk operating system ubuntu 18. Untuk Petunjuk penginstalannya dapat dilihat melalui tombol dibawah ini. <br></p>
-<p><a class="md-button" href="http://wiki.ros.org/melodic/Installation/Ubuntu">Penginstalan ROS Melodic</a></p>
-<p><br> <strong>Penginstalan IceCream CPP</strong> <br>
-Icecream CPP adalah tool debugging yang akan mempermudah proses print dan inspeksi variable ketika runtime. Sebelum memulai instalasi IceCream CPP, kita harus terlebih dahulu menginstall cmake versi 3.16 ke atas agar IceCream CPP dapat digunakan. <br>
-Untuk menginstall cmake versi terbaru dapat dilakukan melalui tombol di bawah ini. <br></p>
-<p><a class="md-button" href="https://github.com/Kitware/CMake/releases/">CMake Versi Terbaru</a> <br></p>
-<p>Jika sudah, maka kita dapat lanjut ke tahap penginstalan IceCream CPP melalui tombol ini yang akan membawamu ke dalam github penginstalan IneCream CPP. File didalam github ini dapat didownload dalam bentuk zip dan sebagainya, lalu ikuti Langkah instalasi di bawahnya.<br></p>
-<p><a class="md-button" href="https://github.com/renatoGarcia/icecream-cpp?tab=readme-ov-file#install">IceCream CPP</a></p>
-<h3 id="dependencies-yang-diperlukan"><strong>Dependencies yang diperlukan</strong></h3>
-<p>Langkah terakhir adalah menginstall ROS Dependencies yang diperlukan, dibawah adalah seluruh command yang diperlikan untuk menginstall dependencies agar ROS Gazebo dapat digunakan.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Sesuaikan dengan jennis ros yang digunakan, disini kami menyarankan menggunakan ROS Melodic.</p>
-</div>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">git</span>
-</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-sound-play</span>
-</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-openni2-launch</span>
-</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-joy</span>
-</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-rtabmap</span>
-</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-rtabmap-ros</span>
-</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-navigation</span>
-</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-move-base</span>
-</span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-robot-state-publisher</span>
-</span><span id="__span-23-10"><a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-robot-localization</span>
-</span><span id="__span-23-11"><a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-navfn</span>
-</span><span id="__span-23-12"><a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-amcl</span>
-</span><span id="__span-23-13"><a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-diagnostic-updater</span>
-</span><span id="__span-23-14"><a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-xacro</span>
-</span><span id="__span-23-15"><a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-depthimage-to-laserscan</span>
-</span><span id="__span-23-16"><a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-imu-filter-madgwick</span>
-</span><span id="__span-23-17"><a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-ros-controllers</span>
-</span><span id="__span-23-18"><a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-ros-control</span>
-</span><span id="__span-23-19"><a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-spacenav-node</span>
-</span></code></pre></div>
-<div class="admonition abstract">
-<p class="admonition-title">Optional</p>
-<p>Setelah memasukkan perintah di atas, dibawah ini adalah perintah opsional yang dapat digunakan jika menggunakan Flashdrive/USB
-<div class="language-css highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">libusb-1</span><span class="p">.</span><span class="nc">0-0-dev</span>
-</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">libsdl-dev</span>
-</span></code></pre></div></p>
-</div>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-gazebo-ros-pkgs</span>
-</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-gazebo-ros-control</span>
-</span></code></pre></div>
-<p>Jika seluruh Langkah sudah dilakukan, maka ROS Gazebo sudah dapat digunakan untuk proyek robotmu!</p>
-<h3 id="solidworks-to-gazebo"><strong>Solidworks to Gazebo</strong></h3>
-<p>Jika kamu ingin tahu cara melakukan exporting file desain 3D robotmu dari program desain <a href="https://www.solidworks.com">SolidWorks</a> agar dapat digunakan kedalam ROS Gazebo, kami sudah menyusun semua langkah yang diperlukan dan kamu dapat melihatnya melalui tombol dibawah ini: <br></p>
-<p><a class="md-button md-button--primary" href="../extrapages/urdf/">Solidworks to ROS Gazebo</a></p>
 
 
 

@@ -382,10 +382,25 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#solidworks-to-gazebo" class="md-nav__link">
     <span class="md-ellipsis">
       Solidworks to Gazebo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solidworks to Gazebo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solidworks-to-ros-gazebo" class="md-nav__link">
+    <span class="md-ellipsis">
+      SolidWorks to ROS Gazebo
     </span>
   </a>
   
@@ -449,10 +464,25 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#solidworks-to-gazebo" class="md-nav__link">
     <span class="md-ellipsis">
       Solidworks to Gazebo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solidworks to Gazebo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solidworks-to-ros-gazebo" class="md-nav__link">
+    <span class="md-ellipsis">
+      SolidWorks to ROS Gazebo
     </span>
   </a>
   
@@ -530,9 +560,25 @@ Untuk menginstall cmake versi terbaru dapat dilakukan melalui tombol di bawah in
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">sudo</span><span class="w"> </span><span class="nt">apt</span><span class="w"> </span><span class="nt">install</span><span class="w"> </span><span class="nt">ros-noetic-gazebo-ros-control</span>
 </span></code></pre></div>
 <p>Jika seluruh Langkah sudah dilakukan, maka ROS Gazebo sudah dapat digunakan untuk proyek robotmu!</p>
-<h3 id="solidworks-to-gazebo"><strong>Solidworks to Gazebo</strong></h3>
-<p>Jika kamu ingin tahu cara melakukan exporting file desain 3D robotmu dari program desain <a href="https://www.solidworks.com">SolidWorks</a> agar dapat digunakan kedalam ROS Gazebo, kami sudah menyusun semua langkah yang diperlukan dan kamu dapat melihatnya melalui tombol dibawah ini: <br></p>
-<p><a class="md-button md-button--primary" href="../extrapages/urdf/">Solidworks to ROS Gazebo</a></p>
+<h2 id="solidworks-to-gazebo"><strong>Solidworks to Gazebo</strong></h2>
+<p>Jika kamu ingin tahu cara melakukan exporting file desain 3D robotmu dari program desain <a href="https://www.solidworks.com">SolidWorks</a> agar dapat digunakan kedalam ROS Gazebo, kami sudah menyusun semua langkah yang diperlukan dibawah ini: <br>
+<br></p>
+<h3 id="solidworks-to-ros-gazebo"><strong>SolidWorks to ROS Gazebo</strong></h3>
+<p>Agar dapat menggunakan desain robot yang sudah kita persiapkan dari aplikasi <a href="https://www.solidworks.com">SolidWorks</a> ke dalam <a href="https://gazebosim.org/home">ROS Gazebo</a> maka kita harus mengubah tipe file desain 3D robot menjadi file <strong>.URDF</strong> terlebih dahulu. Akan tetapi, opsi mengeksport file ke tipe URDF tidak akan ada di Solidowrks sebelum kita menginstall plugin di bawah ini. <br></p>
+<p><a class="md-button" href="https://wiki.ros.org/sw_urdf_exporter">SolidWorks to URDF Exporter</a> <br></p>
+<p><br>
+Setelah menginstall extensi exporter URDF pada SolidWorks, kamu dapat mengakses video-video yang akan menjelaskan basic desain .urdf pada Gazebo melalui tombol dibawah ini. <br></p>
+<p><a class="md-button" href="https://www.youtube.com/playlist?list=PLeEzO_sX5H6TBD6EMGgV-qdhzxPY19m12">Playlist Video Basics</a> <br></p>
+<p><br>
+Langkah berikutnya adalah mengexport bagian-bagian robot yang digunakan, untuk bagian kaki dapat diupload secara terpisah (kaki bagian tengah kiri, dan kaki bagian tengah kanan).</p>
+<p><br>
+File yang telah di export kemudian di <strong>Zip</strong> lalu di copy ke ubuntu 18 yang telah disetup sebelumnya, di ubuntu ini kita aka Unzip file pada bagian <code>Document</code>, lalu copy bagian stl <strong>Body</strong>, <strong>Coxa</strong>, <strong>Femur</strong>, dan <strong>Tibia</strong>. Lalu Paste file-file ini pada bagian <code>src/hexapod_description/meshes</code></p>
+<p><br>
+Lalu download aplikasi <a href="https://www.meshlab.net">Meshlab</a> yang akan digunakan untuk mengurangi faces yang akan digunakan sebagai stl collision nantinya.
+Untuk ubuntu, petunjuk penginstalan aplikasi meshlab dapat di akses melalui tombol dibawah ini.</p>
+<p><a class="md-button" href="https://www.howtoinstall.me/ubuntu/18-04/meshlab/">Meshlab for Ubuntu</a> <br></p>
+<p><br>
+Sehingga pada folder <code>src/hexapod_description/meshes</code> akan terdapat 8 total file stl yang akan digunakan di Gazebo (body, body_col, coxa, coxa_col, <em>dan seterusnya</em>)</p>
 
 
 

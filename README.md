@@ -25,7 +25,7 @@ Interested in knowing more about our robot, then you might wanna check this post
 
 ### Wanna Learn More?!
 
-If you are curious on how we create our hexapod robot or maybe you want to make your own hexapod robot by any chance, then feel free take a peek at our documentation website where we neatly documented every single bit of our progress!
+If you are curious on how we create our hexapod robot or maybe you want to make your own hexapod robot by any chance, then feel free take to a peek at our documentation website where we neatly documented every single bit of our progress!
 
 <div align="center">
   
@@ -40,6 +40,6 @@ If you are curious on how we create our hexapod robot or maybe you want to make 
 #### Don't forget to also follow our social media to find more awesome stuffs
 
 [![Follow on Instagram](https://img.shields.io/badge/Instagram-Follow%20Us-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/barelangf1/)
-[![Visit Our GitHub](https://img.shields.io/badge/GitHub-Check%20Our%20Code-FFA500?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Barelang-F1/barelangf1-setup)
+[![Visit Our GitHub](https://img.shields.io/badge/GitHub-Our%20Sauce-FFA500?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Barelang-F1/barelangf1-setup)
 
 </div>
